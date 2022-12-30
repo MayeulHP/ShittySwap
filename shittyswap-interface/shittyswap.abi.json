@@ -1,0 +1,146 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "pool",
+				"type": "uint256"
+			},
+			{
+				"internalType": "contract IERC20",
+				"name": "tokenA",
+				"type": "address"
+			},
+			{
+				"internalType": "contract IERC20",
+				"name": "tokenB",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "qtyA",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "qtyB",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "freeLiquidity",
+				"type": "bool"
+			}
+		],
+		"name": "addLiquidity",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "tokenA",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "tokenB",
+				"type": "address"
+			}
+		],
+		"name": "addPool",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "value",
+				"type": "uint256"
+			}
+		],
+		"name": "someValue",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "pool",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "firstToken",
+				"type": "bool"
+			},
+			{
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "swap",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "pool",
+				"type": "uint256"
+			}
+		],
+		"name": "withdrawLiquidity",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "pools",
+		"outputs": [
+			{
+				"internalType": "contract IERC20",
+				"name": "tokenA",
+				"type": "address"
+			},
+			{
+				"internalType": "contract IERC20",
+				"name": "tokenB",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "tokenALocked",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "tokenBLocked",
+				"type": "uint256"
+			},
+			{
+				"internalType": "contract lpToken",
+				"name": "lpToken",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
