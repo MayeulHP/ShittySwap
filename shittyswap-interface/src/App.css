@@ -15,6 +15,24 @@
 
 .App-header {
   background-color: #282c34;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 10px;
+}
+
+h1 {
+  background: linear-gradient(to right, #61dafb, #282c34);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+  padding-top: 0;
+}
+
+.App-body {
+  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +40,17 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.connect-button {
+  background-color: #282c34;
+  border: 1px solid #61dafb;
+  border-radius: 5px;
+  color: #61dafb;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
 }
 
 .App-link {
@@ -32,7 +61,64 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.swap-assets {
+  padding: 20px;
+  padding-top: 0px;
+  background-color: #1a7c97;
+  border-radius: 10px;
+  border: 5px solid #0b456b;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.swap-assets h2 {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.swap-assets select {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #282c34;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.swap-assets input {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  display: inline-block;
+  border: 1px solid #282c34;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.swap-assets button {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.swap-assets button:hover {
+  background-color: #45a049;
+}
+
+.select-container {
+  display: flex;
+}
+
+.select-container > div {
+  flex: 1;
+  margin-right: 20px;
 }
